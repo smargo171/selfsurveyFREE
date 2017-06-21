@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#87cefa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="Quiz name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/textView"
+            android:layout_gravity="left"
+            android:editable="false"
+            android:focusable="false"
+            android:singleLine="false"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Question"
+            android:id="@+id/QuestionNameTextView"
+            android:layout_alignTop="@id/textView"
+            android:layout_gravity="left"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+            android:singleLine="false"
+            android:layout_marginLeft="20dp"
+            />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/list"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:descendantFocusability="afterDescendants"
+            android:layout_alignTop="@+id/addAnswerButton"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addAnswerButton"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="addAnswer"
+            android:background="@drawable/ic_action_new"
+            android:layout_below="@+id/QuestionNameTextView"
+            android:layout_alignRight="@android:id/list"/>
+
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonNext"
+            android:background="@drawable/ic_action_next_item"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="nextQuestion"
+            android:layout_toRightOf="@+id/imageButtonDelQuestion"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonPrev"
+            android:layout_alignParentBottom="true"
+            android:onClick="prevQuestion"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_action_previous_item"
+            />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonDelQuestion"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_action_remove"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="delQuestion"
+            android:layout_toRightOf="@+id/imageButtonEditQuestion"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEditQuestion"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_action_edit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="editNameQuestionD"
+            android:layout_toRightOf="@+id/imageButtonAddQuestion"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonAddQuestion"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_action_new"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="addQuestion"
+            android:layout_toRightOf="@id/imageButtonPrev"/>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_alignLeft="@+id/imageButtonPrev"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignBottom="@android:id/list"
+            android:layout_width="match_parent"/>
+
+
+</RelativeLayout>

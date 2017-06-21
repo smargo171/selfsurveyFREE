@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="orange">#ff5500</color>
+        <color name="white">#ffffff</color>
+        <color name="transparent">#00000000</color>
+        <color name="date_color">#999999</color>
+        <color name="black">#000000</color>
+        <color name="gray">#999999</color>
+        <color name="blue">#0066cc</color>
+        <color name="gold">#e6b121</color>
+        <color name="blueback">#99FFFF</color>
+        <color name="articlecolor">#3399FF</color>
+        <color name="article_title">#3399FF</color>
+        <color name="cachecolor">#8ad0e8</color>
+        <color name="myyellow">#cc6600</color>
+        <color name="myygray">#ff000000</color>
+    <color name="lightblue">#c3e6fc</color>
+    <color name="verylightblue">#dbf0fd</color>
+
+    <color name="colorPrimary">#33d4e2</color>
+    <color name="colorPrimaryDark">#17becd</color>
+    <color name="windowBackground">#ececec</color>
+
+
+    <color name="progres1">#23c8d6</color>
+    <color name="progres2">#29d9e8</color>
+    <color name="progres3">#30edfc</color>
+    <color name="progres4">#31eefe</color>
+
+
+
+
+    </resources>

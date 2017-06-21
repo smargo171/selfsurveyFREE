@@ -1,0 +1,54 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionModeStyle">@style/MyActionMode</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_arrow_back_white_24dp</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyTheme.OverFlow</item>
+    </style>
+
+    <style name="MyTheme.OverFlow" parent="Base.Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_white_24dp</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
+        <item name="android:subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+
+    </style>
+
+    <style name="MyActionMode" parent="Theme.AppCompat.Light.DarkActionBar"
+        >
+        <item name="android:layout_height">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+        <item name="android:height">48dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse</item>
+        <item name="android:subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle</item>
+    </style>
+
+    <style name="tekst" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

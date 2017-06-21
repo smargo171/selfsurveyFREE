@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:padding="http://schemas.android.com/apk/res-auto"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CHART"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Quiz name"
+        android:id="@+id/chart_title"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="#666662"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        />
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:background="@android:color/white"
+        android:padding="0dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/legendStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="14 may 1242"
+            android:textSize="13sp"
+            android:textColor="#666662"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/legendEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="14 may 1242"
+            android:textSize="13sp"
+            android:textColor="#666662"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/legend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/chart_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chart_title"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+        >
+
+    </LinearLayout>
+</LinearLayout>

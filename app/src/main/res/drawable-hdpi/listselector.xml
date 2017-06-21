@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selector style for listrow -->
+    <item
+            android:state_selected="false"
+            android:state_pressed="false"
+            android:drawable="@color/verylightblue" />
+</selector>
+    <!--    android:drawable="@color/white"  #cfebfd -->

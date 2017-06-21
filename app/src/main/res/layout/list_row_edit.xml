@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_marginRight="10dp"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAnswerText"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:minHeight="36dp"
+            android:gravity="center_vertical"/>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView"
+            android:layout_below="@+id/editAnswerText"
+            android:layout_alignBottom="@+id/startEditButton"
+            android:background="#33b5e5"/>
+
+    <ImageButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_below="@id/editAnswerText"
+            android:id="@+id/startEditButton"
+            android:onClick="editAnswerD"
+            android:layout_toRightOf="@+id/deleteButton"
+            android:background="@drawable/ic_action_edit"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_below="@id/editAnswerText"
+            android:id="@+id/deleteButton"
+            android:layout_marginLeft="10dp"
+            android:onClick="delAnswer"
+            android:layout_toRightOf="@+id/rankBad"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/ic_action_remove"
+            android:maxHeight="3dp"
+            android:maxWidth="3dp"
+            android:longClickable="true"/>
+
+    <ImageButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_below="@id/editAnswerText"
+            android:id="@+id/rankGood"
+            android:onClick="rankUp"
+            android:background="@drawable/navigation_collapse"
+            android:layout_toRightOf="@+id/startEditButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"/>
+    <ImageButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_below="@id/editAnswerText"
+            android:id="@+id/rankBad"
+            android:onClick="rankDown"
+            android:background="@drawable/navigation_expand"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="1"
+            android:id="@+id/rankShow"
+            android:layout_alignBottom="@+id/editAnswerText"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+
+</RelativeLayout>

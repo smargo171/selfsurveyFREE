@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_dir" >
+    <EditTextPreference
+            android:title="@string/pref_export_dir"
+            android:summary="@string/pref_export_dir_summary"
+            android:key="prefExportDir"/>
+</PreferenceCategory>
+
+</PreferenceScreen>

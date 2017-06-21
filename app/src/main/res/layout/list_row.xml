@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:paddingBottom="0dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/drawable_image_view"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/triangle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/triangle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+
+            <TextView
+                android:id="@+id/cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/white"
+                android:text="6"
+                android:paddingBottom="4dp"
+                android:paddingRight="4dp"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:paddingRight="12dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/question_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/question"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/questions_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/question_icon"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#15e0ca"
+                    android:layout_centerVertical="true"
+                    android:textSize="11sp"
+                    />
+
+                <TextView
+                    android:id="@+id/questions_constant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/questions_counter"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#15e0ca"
+                    android:layout_centerVertical="true"
+                    android:textSize="11sp"
+                    android:text="@string/questions_constant"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:id="@+id/lastDate"
+                    android:textSize="11sp"
+                    android:textColor="#a4a49f"
+                    android:layout_alignParentRight="true"
+                     />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/query_set_name_const"
+                android:textColor="#666662"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

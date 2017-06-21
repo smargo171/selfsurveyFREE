@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="100"
+        android:title="Edit Survey"/>
+    <item
+    android:id="@+id/action_run"
+    android:orderInCategory="50"
+    android:title="Run Survey"/>
+    <item
+            android:id="@+id/action_chart"
+            android:orderInCategory="110"
+            android:icon="@drawable/ic_line_chart"
+            app:showAsAction="always"
+            android:title="Chart"/>
+    <item
+            android:id="@+id/action_showone"
+            android:orderInCategory="250"
+            android:title="Show Results"/>
+    <item
+            android:id="@+id/action_export_results"
+            android:orderInCategory="290"
+            android:title="Export Results"/>
+    <item
+            android:id="@+id/action_delete_set"
+            android:orderInCategory="400"
+            android:title="Delete Survey"/>
+    <item
+            android:id="@+id/action_export_set"
+            android:orderInCategory="360"
+            android:title="Export Survey"/>
+    <item
+            android:id="@+id/action_share_set"
+            android:orderInCategory="365"
+            android:title="Share by Email"/>
+    <item
+            android:id="@+id/action_rename_set"
+            android:orderInCategory="370"
+            android:title="Rename Survey"/>
+
+</menu> 

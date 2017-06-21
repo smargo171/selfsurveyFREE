@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:paddingBottom="0dp"
+
+    >
+
+<RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/activatedBackgroundIndicator"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/radioButtonSelectedQuestion"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="selectQuestionToChart"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentLeft="true"
+        android:button="@drawable/checkbox__blue_bg"
+        />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedQuestion"
+            android:text="Question1"
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+        android:textColor="#666662"
+        android:layout_toRightOf="@id/radioButtonSelectedQuestion"
+            />
+
+
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

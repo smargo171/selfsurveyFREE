@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">selfsurveyFREE</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="query_set_name_const">Query Set Name</string>
+    <string name="questions_constant">Questions </string>
+    <string name="first_question">First Question</string>
+    <string name="first_question_number">1)</string>
+    <string name="first_question_dots"> </string>
+    <string name="title_activity_edit_quiz">edit survey</string>
+    <string name="title_activity_runOne_quiz">run survey</string>
+    <string name="title_activity_chart">chart survey</string>
+    <string name="chart_title">results chart</string>
+    <string name="pref_export_dir">Export Directory</string>
+    <string name="pref_export_dir_summary">Set Export Directory</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pref_dir">Directories</string>
+    <string name="my_surveys">My Surveys</string>
+    <string name="add_set_warning">Please edit and rename the default New Set first</string>
+    <string name="cant_edit_empty_set_warning">Can not edit empty quest</string>
+    <string name="answer_already_exists_warning">Answer already exists, cant\' add</string>
+    <string name="question_already_exists_warning">Question already exists, cant\' add:</string>
+    <string name="cant_add_answer_to_empty_question">Can\'t add. Please set the question name
+        first
+    </string>
+    <string name="question_name_cant_be_empty_warning">Can\'t add. Please set the question name
+        first
+    </string>
+    <string name="change_default_question_name_warning">Please change default question name</string>
+    <string name="new_run_date">Record New</string>
+    <string name="cant_rename_set_warning">Can\'t rename. Set already exists</string>
+    <string name="set_rename_failed">Set renaming failed</string>
+    <string name="cant_display_empty_quest_warning">Can not display empty quest</string>
+    <string name="send_questions_and_results_by_email_chooser">Send Questions and Results by Email
+    </string>
+    <string name="select_question_chart_text">Select Questions to Chart</string>
+    <string name="not_in_free">Not available in FREE version. Please see Help how to upgrade.
+    </string>
+    <string name="set_run_date">Set Date</string>
+    <string name="title_activity_show_res">show results</string>
+    <string name="eula">By using this product you are accepting EULA. Read EULA at http://www.omplusm.com/eula</string>
+    <string name="updates"></string>
+    <string name="upgrade">Upgrade</string>
+    <string name="res_quite_ok">Seems to be quite OK. You may want to improve though.</string>
+    <string name="res_not_perfect">This is not perfect. Consider corrective actions.</string>
+    <string name="res_ok">You are doing fine, congratulations!</string>
+    <string name="res_nok">This does not look like a good result. Consider professional advise.</string>
+
+
+</resources>

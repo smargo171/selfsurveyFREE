@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/activatedBackgroundIndicator"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="match_parent">
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAnswerText"
+            android:text="Answer1"
+            android:layout_marginRight="5dp"
+            android:editable="true"
+            android:inputType="text"
+            android:focusable="false"
+            android:layout_toRightOf="@+id/radioButton"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            />
+
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/radioButton"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="selectAnswer"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+        android:background="@color/windowBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="EDIT SURVEY"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            />
+                        <ImageButton
+                            android:id="@+id/addAnswerButton"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/plus"
+                            android:background="@android:color/transparent"
+                            android:layout_centerVertical="true"
+                            android:onClick="addAnswer"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:scaleType="fitXY"
+                            />
+                </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Quiz name"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#666662"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:id="@+id/QuestionNameTextView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:editable="false"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:textColor="#666662"
+            />
+
+    <com.mobeta.android.dslv.DragSortListView
+         android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:id="@android:id/list"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+        android:clickable="true"
+        dslv:collapsed_height="2dp"
+            dslv:drag_enabled="true"
+            dslv:drag_start_mode="onLongPress"
+            dslv:float_alpha="0.6"
+            dslv:max_drag_scroll_speed="0.5"
+            dslv:remove_enabled="false"
+            dslv:slide_shuffle_speed="0.3"
+            dslv:sort_enabled="true"
+            dslv:track_drag_sort="false"
+            dslv:use_default_controller="true"
+        />
+
+        <LinearLayout
+            android:id="@+id/progressContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:gravity="center_vertical"
+            >
+
+            <View
+                android:id="@+id/progress"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:background="#32e7f7"
+                android:layout_weight="0.44"
+                />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="10dp"
+                    android:background="#32e7f7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="10dp"
+                    android:background="#d7d7d7"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/progressText"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:text="3"
+                    android:gravity="center"
+                    android:background="@drawable/progress_text_bg"
+                    android:textColor="#32e7f7"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="10dp"
+                android:background="#d7d7d7"
+                android:layout_centerVertical="true"
+                />
+
+        </LinearLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progressBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageButtonPrev"
+                    android:onClick="prevQuestion"
+                    android:src="@drawable/back"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"/>
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageButtonAddQuestion"
+                    android:onClick="addQuestion"
+                    android:src="@drawable/plus"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"/>
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageButtonDelQuestion"
+                    android:onClick="delQuestion"
+                    android:src="@drawable/delete_menu"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"/>
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageButtonEditQuestion"
+                    android:onClick="editNameQuestionD"
+                    android:src="@drawable/edit_menu"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"/>
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                    android:id="@+id/imageButtonNext"
+                    android:onClick="nextQuestion"
+                android:src="@drawable/next"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>

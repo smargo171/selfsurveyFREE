@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/windowBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:elevation="4dp"
+            >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            />
+                </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/circleView"
+        CircleProgressView:contourSize="0dp"
+        CircleProgressView:rimWidth="5dp"
+        CircleProgressView:rimColor="#e0e0e0"
+        CircleProgressView:barWidth="5dp"
+        CircleProgressView:barColor="@color/colorPrimary"
+        CircleProgressView:showUnit="false"
+        CircleProgressView:textColor="@color/colorPrimary"
+        CircleProgressView:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:id="@+id/QuestionNameTextView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:editable="false"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="18sp"
+        android:textColor="#666662"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:id="@android:id/list"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            />
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addAnswerButton"
+            android:layout_gravity="right|center_vertical"
+        android:visibility="gone"
+            android:onClick="addAnswer"
+            android:background="@drawable/ic_action_new"
+            android:layout_below="@+id/QuestionNameTextView"
+            android:layout_alignRight="@android:id/list"/>
+
+
+
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonDelQuestion"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_action_remove"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="delQuestion"
+            android:layout_toRightOf="@+id/imageButtonEditQuestion"
+        android:visibility="gone"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEditQuestion"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_action_edit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="editNameQuestionD"
+        android:visibility="gone"
+            android:layout_toRightOf="@+id/imageButtonAddQuestion"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonAddQuestion"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_action_new"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="addQuestion"
+        android:visibility="gone"
+            android:layout_toRightOf="@id/imageButtonPrev"/>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_alignLeft="@+id/imageButtonPrev"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignBottom="@android:id/list"
+        android:visibility="gone"
+            android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        >
+
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageButtonPrev"
+            android:onClick="prevQuestion"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageButtonNext"
+            android:src="@drawable/next"
+            android:onClick="nextQuestion"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
