@@ -1,0 +1,78 @@
+# selfsurveyFREE
+
+<font color="#666662">
+
+<center><h3>selfsurvey</h3></center>
+<p>
+    Does your blood pressure really drop when you drink less coffee? Does your sleep really improve if you do fitness exercises? If you ever wanted to <b>track such dependencies</b> in your health, mood and well being or discover those dependencies in the word around you, <b>selfsurvey</b> is a perfect tool for this.
+<p>
+    <b>Create your own survey</b> on the go or <b>import</b> it from a text file, run it daily or several times a day, discover dependencies by <b>looking at the charts</b> or export data for the analysis in your <b>favorite spreadsheet</b> application. All actions are <b>off-line</b>; you need Internet connection only to <b>share the questions or results by email</b>, if you want to.
+<p>
+    There are <b>some rules</b> to take care about. Create a survey set, and then create questions and the answers. The <b>answers have to be ranked</b> in a way that the "best" and "greenest" answer is on top (you can move it up and down after you've created it, no worries). The more answers you define, the better. If there is only one answer, the app can't tell if it's "good" or "bad".
+<p>
+    The app comes with some <b>demo</b> survey pre-installed. Feel free to use it, but don't expect any medical / scientific correctness or meaning of the questions or answers.  Better <b>try your own!</b>
+<p>
+    If you need support or have a question, please write to <b>selfsurvey@m-servic.es</b> and we will help you!
+<p>
+<b>Support</b>
+<p><a href="http://www.selfsurvey.info">selfsurvey</a></p>
+<b>selfsurvey@m-servic.es</b>
+<p>
+    <b>Credits</b>
+<p>
+<p><a href="https://github.com/bauerca/drag-sort-listview/tree/master/library/src/com/mobeta/android/dslv">mobeta library</a></p>
+<p><a href="http://www.androidicons.com/">Icons by Opoloo</a></p>
+<p><a href="http://www.donnfelker.com/android-a-simple-eula-for-your-android-apps/">Simple EULA</a></p>
+<p><a href="https://www.docracy.com/8753/simple-end-user-license-agreement-for-selling-apps">EULA template</a></p>
+<p><a href="http://www.vogella.com/articles/AndroidListView/">vogella.com</a></p>
+<p><a href="http://www.androidhive.info/2011/10/android-listview-tutorial/">www.androidhive.info</a></p>
+<p><a href="http://stackoverflow.com/">stackoverflow.com</a></p>
+<p><a href="http://sourceforge.net/projects/opencsv/">Open CSV</a></p>
+<p><a href="http://www.achartengine.org">achartengine</a></p>
+<p><a href="https://github.com/amulyakhare/TextDrawable">TextDrawable</a></p>
+<p><a href="http://www.codeproject.com/Articles/720303/Google-Play-In-App-Billing-Demo-App">Google Play In App Billing Demo App</a></p>
+
+
+<p>
+    <b>Free Sample Surveys in this Application are based on:</b>
+<p>
+<p><a href="http://depts.washington.edu/hprc/docs/rapa_03_06.pdf">University of Washington</a></p>
+<p><a href="http://www.une.edu/sites/default/files/5210_Healthy_Habits_Survey10-18.pdf">Adapted from High Five for Kids in Massachusetts</a></p>
+<p><a href="http://phqscreeners.com">Pfizer US</a></p>
+<p><a href="http://web.stanford.edu/~dement/epworth.html">THE EPWORTH SLEEPINESS SCALE</a></p>
+<p><a href="http://www.dailymail.co.uk/health/article-2095705/Alzheimers-questionnaire-Test-reveal-YOU-risk.html">Alzheimers Test by Dailymail</a></p>
+
+
+<p>
+    <b>Copyrights</b>
+<p>
+
+    <b>TextDrawable</b>
+<p>
+
+
+Copyright (c) 2014 Amulya Khare
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+
+<p><b>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+</b></p>
+
+</font>
